@@ -3,7 +3,8 @@ const app = require("express")()
 const bodyParser = require("body-parser");
 var cors = require('cors');
 const axios = require("axios");
-const { pick, differenceWith } = require("lodash");
+const { pick } = require("lodash");
+const jsonexport = require("jsonexport");
 
 // Configure request parsers
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -13,13 +14,13 @@ app.use(cors())
 // Enable CORS
 var whitelist = ['http://localhost:3000']
 var corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
+    origin: function (origin, callback) {
+        if (whitelist.indexOf(origin) !== -1) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
     }
-  }
 }
 
 // User 
@@ -33,12 +34,12 @@ const db = process.env.DB;
 const un = process.env.USER;
 const pw = process.env.PWD;
 const ds = process.env.DATASET;
-const uri = `mongodb+srv://${un}:${pw}@${db}.v9jhm.mongodb.net/${ds}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${un}:${pw}@${db}.v9jhm.mongodb.net/${ds}?retryWrites=true&w=majority&journal=true&wtimeoutMS=10000`
 const connectionOptions = { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 }
 
 // Third party User API 
 const authToken = process.env.APITOKEN;
-const apiURL = "https://gorest.co.in/public-api/users"
+const apiURL = "https://gorest.co.in/public-api/users?page=1"
 const apiHeader = {
     Authorization: `Bearer ${authToken}`
 }
@@ -61,8 +62,8 @@ const connect = async (error) => {
 
 const initDB = async () => await connect();
 
-app.get("/users", cors(corsOptions),(req, res, next) => {
-   
+app.get("/users/list", cors(corsOptions), (req, res, next) => {
+
     axios.get(apiURL, { apiHeader })
         .then(result => {
             const { data } = result.data;
@@ -71,9 +72,8 @@ app.get("/users", cors(corsOptions),(req, res, next) => {
         .catch(error => res.status(500).send(error))
 });
 
-app.post("/users", (req, res, next) => {
+app.get("/users", (req, res, next) => {
     let dbUserIDList = [];
-    let apiUserIDList = [];
     let newUsers = [];
 
     User.find({}, (err, docs) => {
@@ -88,7 +88,6 @@ app.post("/users", (req, res, next) => {
 
             if (dbUserIDList && dbUserIDList.length > 0) {
                 newUsers = data.filter(user => dbUserIDList.find(dbuser => user.id == dbuser.id) === undefined);
-                console.log("newUser", newUsers);
             } else {
                 newUsers = data
             }
@@ -106,6 +105,24 @@ app.post("/users", (req, res, next) => {
         })
         .catch(error => res.status(500).send(error))
 });
+
+app.post("/users/update", (req, res, next) => {
+    User.findOneAndUpdate({ id: req.body.id }, req.body, (err, doc) => {
+        if (err) {
+            console.log(err);
+            res.status(500).send(err)
+        }
+        res.status(200).send(doc)
+    })
+})
+
+app.post("/users/csv", (req, res, next) => {
+    jsonexport(req.body, function (err, csv) {
+        if (err) res.status(500).send(err);
+        res.setHeader("content-disposition", "attachment; filename=data.csv");
+        res.send(csv);
+    });
+})
 
 app.listen(process.env.PORT || 8181, () => {
     console.log("USER service is available on port", (process.env.PORT || 8181))
