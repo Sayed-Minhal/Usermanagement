@@ -1,0 +1,860 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render App & UserGrid and take snapshot when API call is successful should return users list 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="App"
+      >
+        <div
+          style="text-align: center;"
+        >
+          <div
+            class="rgt-wrapper"
+            data-testid="maingrid"
+            id="maingrid"
+            style="width: 99%;"
+          >
+            <div
+              class="rgt-header-container"
+            >
+              <div
+                class="rgt-search-container"
+              >
+                <label
+                  class="rgt-search-label"
+                  for="rgt-search"
+                >
+                  <span
+                    class="rgt-search-icon"
+                  >
+                    ⚲
+                  </span>
+                  Search:
+                </label>
+                <input
+                  class="rgt-search-input"
+                  name="rgt-search"
+                  type="search"
+                  value=""
+                />
+              </div>
+              <div
+                class="rgt-columns-manager-wrapper"
+              >
+                <button
+                  class="rgt-columns-manager-button"
+                >
+                  <svg
+                    height="14"
+                    viewBox="0 0 24 24"
+                    width="14"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="rgt-columns-manager-popover"
+                >
+                  <span
+                    class="rgt-columns-manager-popover-title"
+                  >
+                    Column visibility
+                  </span>
+                  <div
+                    class="rgt-columns-manager-popover-body"
+                  >
+                    <div
+                      class="rgt-clickable rgt-columns-manager-popover-row"
+                    >
+                      <label
+                        class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                        for="checkbox-0"
+                        title="User ID"
+                      >
+                        User ID
+                      </label>
+                      <input
+                        checked=""
+                        class="rgt-clickable"
+                        id="checkbox-0"
+                        type="checkbox"
+                      />
+                    </div>
+                    <div
+                      class="rgt-clickable rgt-columns-manager-popover-row"
+                    >
+                      <label
+                        class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                        for="checkbox-1"
+                        title="User Name"
+                      >
+                        User Name
+                      </label>
+                      <input
+                        checked=""
+                        class="rgt-clickable"
+                        id="checkbox-1"
+                        type="checkbox"
+                      />
+                    </div>
+                    <div
+                      class="rgt-clickable rgt-columns-manager-popover-row"
+                    >
+                      <label
+                        class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                        for="checkbox-2"
+                        title="E Mail"
+                      >
+                        E Mail
+                      </label>
+                      <input
+                        checked=""
+                        class="rgt-clickable"
+                        id="checkbox-2"
+                        type="checkbox"
+                      />
+                    </div>
+                    <div
+                      class="rgt-clickable rgt-columns-manager-popover-row"
+                    >
+                      <label
+                        class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                        for="checkbox-3"
+                        title="Gender"
+                      >
+                        Gender
+                      </label>
+                      <input
+                        checked=""
+                        class="rgt-clickable"
+                        id="checkbox-3"
+                        type="checkbox"
+                      />
+                    </div>
+                    <div
+                      class="rgt-clickable rgt-columns-manager-popover-row"
+                    >
+                      <label
+                        class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                        for="checkbox-4"
+                        title="Status"
+                      >
+                        Status
+                      </label>
+                      <input
+                        checked=""
+                        class="rgt-clickable"
+                        id="checkbox-4"
+                        type="checkbox"
+                      />
+                    </div>
+                    <div
+                      class="rgt-clickable rgt-columns-manager-popover-row"
+                    >
+                      <label
+                        class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                        for="checkbox-5"
+                        title="E Mail"
+                      >
+                        E Mail
+                      </label>
+                      <input
+                        checked=""
+                        class="rgt-clickable"
+                        id="checkbox-5"
+                        type="checkbox"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="rgt-container"
+              style="display: grid; overflow: auto; flex: 1; grid-template-columns: 10% 200px 200px 200px 200px 200px auto 10%; grid-template-rows: repeat(2, max-content);"
+            >
+              <div
+                class="rgt-cell-header rgt-cell-header-id rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+                data-column-id="1"
+              >
+                <div
+                  class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                  data-column-id="1"
+                >
+                  <span
+                    class="rgt-text-truncate"
+                    data-column-id="1"
+                  >
+                    User ID
+                  </span>
+                </div>
+                <span
+                  class="rgt-resize-handle"
+                />
+              </div>
+              <div
+                class="rgt-cell-header rgt-cell-header-name rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+                data-column-id="2"
+              >
+                <div
+                  class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                  data-column-id="2"
+                >
+                  <span
+                    class="rgt-text-truncate"
+                    data-column-id="2"
+                  >
+                    User Name
+                  </span>
+                </div>
+                <span
+                  class="rgt-resize-handle"
+                />
+              </div>
+              <div
+                class="rgt-cell-header rgt-cell-header-email rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+                data-column-id="3"
+              >
+                <div
+                  class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                  data-column-id="3"
+                >
+                  <span
+                    class="rgt-text-truncate"
+                    data-column-id="3"
+                  >
+                    E Mail
+                  </span>
+                </div>
+                <span
+                  class="rgt-resize-handle"
+                />
+              </div>
+              <div
+                class="rgt-cell-header rgt-cell-header-gender rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+                data-column-id="4"
+              >
+                <div
+                  class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                  data-column-id="4"
+                >
+                  <span
+                    class="rgt-text-truncate"
+                    data-column-id="4"
+                  >
+                    Gender
+                  </span>
+                </div>
+                <span
+                  class="rgt-resize-handle"
+                />
+              </div>
+              <div
+                class="rgt-cell-header rgt-cell-header-status rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+                data-column-id="5"
+              >
+                <div
+                  class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                  data-column-id="5"
+                >
+                  <span
+                    class="rgt-text-truncate"
+                    data-column-id="5"
+                  >
+                    Status
+                  </span>
+                </div>
+                <span
+                  class="rgt-resize-handle"
+                />
+              </div>
+              <div
+                class="rgt-cell-header rgt-cell-header-email rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+                data-column-id="6"
+              >
+                <div
+                  class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                  data-column-id="6"
+                >
+                  <span
+                    class="rgt-text-truncate"
+                    data-column-id="6"
+                  >
+                    E Mail
+                  </span>
+                </div>
+                <span
+                  class="rgt-resize-handle"
+                />
+              </div>
+              <div
+                class="rgt-cell-header rgt-cell-header-virtual-col rgt-cell-header-sticky"
+                data-column-id="virtual"
+              />
+              <div
+                class="rgt-cell-header rgt-cell-header-undefined rgt-cell-header-not-sortable rgt-cell-header-sticky rgt-cell-header-not-resizable rgt-cell-header-searchable rgt-cell-header-pinned rgt-cell-header-pinned-right"
+                data-column-id="my-buttons-column"
+              >
+                <div
+                  class="rgt-cell-header-inner"
+                  data-column-id="my-buttons-column"
+                >
+                  <span
+                    class="rgt-text-truncate"
+                    data-column-id="my-buttons-column"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="rgt-container-overlay"
+            >
+              No Results found
+            </div>
+            <div
+              class="rgt-footer"
+            >
+              <div
+                class="rgt-footer-items-information"
+              >
+                Total rows:
+                 
+                0
+                 
+                | Rows: 0
+                 
+                
+              </div>
+              <div
+                class="rgt-footer-right-container"
+              >
+                <div
+                  class="rgt-footer-page-size"
+                >
+                  <span>
+                    Rows per page:
+                     
+                  </span>
+                  <select
+                    class="rgt-footer-page-size-select"
+                  >
+                    <option
+                      value="20"
+                    >
+                      20
+                    </option>
+                    <option
+                      value="50"
+                    >
+                      50
+                    </option>
+                    <option
+                      value="100"
+                    >
+                      100
+                    </option>
+                  </select>
+                </div>
+                <div
+                  class="rgt-footer-pagination"
+                >
+                  <button
+                    class="rgt-footer-pagination-button rgt-disabled-button"
+                    disabled=""
+                  >
+                    Prev
+                  </button>
+                  <div
+                    class="rgt-footer-pagination-input-container"
+                  >
+                    <span>
+                      Page:
+                       
+                    </span>
+                    <input
+                      class="rgt-footer-page-input"
+                      type="number"
+                      value="0"
+                    />
+                    <span>
+                      of
+                       
+                      0
+                    </span>
+                  </div>
+                  <button
+                    class="rgt-footer-pagination-button rgt-disabled-button"
+                    disabled=""
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button>
+            Export to CSV
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="App"
+    >
+      <div
+        style="text-align: center;"
+      >
+        <div
+          class="rgt-wrapper"
+          data-testid="maingrid"
+          id="maingrid"
+          style="width: 99%;"
+        >
+          <div
+            class="rgt-header-container"
+          >
+            <div
+              class="rgt-search-container"
+            >
+              <label
+                class="rgt-search-label"
+                for="rgt-search"
+              >
+                <span
+                  class="rgt-search-icon"
+                >
+                  ⚲
+                </span>
+                Search:
+              </label>
+              <input
+                class="rgt-search-input"
+                name="rgt-search"
+                type="search"
+                value=""
+              />
+            </div>
+            <div
+              class="rgt-columns-manager-wrapper"
+            >
+              <button
+                class="rgt-columns-manager-button"
+              >
+                <svg
+                  height="14"
+                  viewBox="0 0 24 24"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="rgt-columns-manager-popover"
+              >
+                <span
+                  class="rgt-columns-manager-popover-title"
+                >
+                  Column visibility
+                </span>
+                <div
+                  class="rgt-columns-manager-popover-body"
+                >
+                  <div
+                    class="rgt-clickable rgt-columns-manager-popover-row"
+                  >
+                    <label
+                      class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                      for="checkbox-0"
+                      title="User ID"
+                    >
+                      User ID
+                    </label>
+                    <input
+                      checked=""
+                      class="rgt-clickable"
+                      id="checkbox-0"
+                      type="checkbox"
+                    />
+                  </div>
+                  <div
+                    class="rgt-clickable rgt-columns-manager-popover-row"
+                  >
+                    <label
+                      class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                      for="checkbox-1"
+                      title="User Name"
+                    >
+                      User Name
+                    </label>
+                    <input
+                      checked=""
+                      class="rgt-clickable"
+                      id="checkbox-1"
+                      type="checkbox"
+                    />
+                  </div>
+                  <div
+                    class="rgt-clickable rgt-columns-manager-popover-row"
+                  >
+                    <label
+                      class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                      for="checkbox-2"
+                      title="E Mail"
+                    >
+                      E Mail
+                    </label>
+                    <input
+                      checked=""
+                      class="rgt-clickable"
+                      id="checkbox-2"
+                      type="checkbox"
+                    />
+                  </div>
+                  <div
+                    class="rgt-clickable rgt-columns-manager-popover-row"
+                  >
+                    <label
+                      class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                      for="checkbox-3"
+                      title="Gender"
+                    >
+                      Gender
+                    </label>
+                    <input
+                      checked=""
+                      class="rgt-clickable"
+                      id="checkbox-3"
+                      type="checkbox"
+                    />
+                  </div>
+                  <div
+                    class="rgt-clickable rgt-columns-manager-popover-row"
+                  >
+                    <label
+                      class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                      for="checkbox-4"
+                      title="Status"
+                    >
+                      Status
+                    </label>
+                    <input
+                      checked=""
+                      class="rgt-clickable"
+                      id="checkbox-4"
+                      type="checkbox"
+                    />
+                  </div>
+                  <div
+                    class="rgt-clickable rgt-columns-manager-popover-row"
+                  >
+                    <label
+                      class="rgt-clickable rgt-flex-child rgt-text-truncate"
+                      for="checkbox-5"
+                      title="E Mail"
+                    >
+                      E Mail
+                    </label>
+                    <input
+                      checked=""
+                      class="rgt-clickable"
+                      id="checkbox-5"
+                      type="checkbox"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rgt-container"
+            style="display: grid; overflow: auto; flex: 1; grid-template-columns: 10% 200px 200px 200px 200px 200px auto 10%; grid-template-rows: repeat(2, max-content);"
+          >
+            <div
+              class="rgt-cell-header rgt-cell-header-id rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+              data-column-id="1"
+            >
+              <div
+                class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                data-column-id="1"
+              >
+                <span
+                  class="rgt-text-truncate"
+                  data-column-id="1"
+                >
+                  User ID
+                </span>
+              </div>
+              <span
+                class="rgt-resize-handle"
+              />
+            </div>
+            <div
+              class="rgt-cell-header rgt-cell-header-name rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+              data-column-id="2"
+            >
+              <div
+                class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                data-column-id="2"
+              >
+                <span
+                  class="rgt-text-truncate"
+                  data-column-id="2"
+                >
+                  User Name
+                </span>
+              </div>
+              <span
+                class="rgt-resize-handle"
+              />
+            </div>
+            <div
+              class="rgt-cell-header rgt-cell-header-email rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+              data-column-id="3"
+            >
+              <div
+                class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                data-column-id="3"
+              >
+                <span
+                  class="rgt-text-truncate"
+                  data-column-id="3"
+                >
+                  E Mail
+                </span>
+              </div>
+              <span
+                class="rgt-resize-handle"
+              />
+            </div>
+            <div
+              class="rgt-cell-header rgt-cell-header-gender rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+              data-column-id="4"
+            >
+              <div
+                class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                data-column-id="4"
+              >
+                <span
+                  class="rgt-text-truncate"
+                  data-column-id="4"
+                >
+                  Gender
+                </span>
+              </div>
+              <span
+                class="rgt-resize-handle"
+              />
+            </div>
+            <div
+              class="rgt-cell-header rgt-cell-header-status rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+              data-column-id="5"
+            >
+              <div
+                class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                data-column-id="5"
+              >
+                <span
+                  class="rgt-text-truncate"
+                  data-column-id="5"
+                >
+                  Status
+                </span>
+              </div>
+              <span
+                class="rgt-resize-handle"
+              />
+            </div>
+            <div
+              class="rgt-cell-header rgt-cell-header-email rgt-clickable rgt-cell-header-sortable rgt-cell-header-sticky rgt-cell-header-resizable rgt-cell-header-searchable rgt-cell-align-left"
+              data-column-id="6"
+            >
+              <div
+                class="rgt-cell-header-inner rgt-cell-header-inner-not-pinned-right"
+                data-column-id="6"
+              >
+                <span
+                  class="rgt-text-truncate"
+                  data-column-id="6"
+                >
+                  E Mail
+                </span>
+              </div>
+              <span
+                class="rgt-resize-handle"
+              />
+            </div>
+            <div
+              class="rgt-cell-header rgt-cell-header-virtual-col rgt-cell-header-sticky"
+              data-column-id="virtual"
+            />
+            <div
+              class="rgt-cell-header rgt-cell-header-undefined rgt-cell-header-not-sortable rgt-cell-header-sticky rgt-cell-header-not-resizable rgt-cell-header-searchable rgt-cell-header-pinned rgt-cell-header-pinned-right"
+              data-column-id="my-buttons-column"
+            >
+              <div
+                class="rgt-cell-header-inner"
+                data-column-id="my-buttons-column"
+              >
+                <span
+                  class="rgt-text-truncate"
+                  data-column-id="my-buttons-column"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="rgt-container-overlay"
+          >
+            No Results found
+          </div>
+          <div
+            class="rgt-footer"
+          >
+            <div
+              class="rgt-footer-items-information"
+            >
+              Total rows:
+               
+              0
+               
+              | Rows: 0
+               
+              
+            </div>
+            <div
+              class="rgt-footer-right-container"
+            >
+              <div
+                class="rgt-footer-page-size"
+              >
+                <span>
+                  Rows per page:
+                   
+                </span>
+                <select
+                  class="rgt-footer-page-size-select"
+                >
+                  <option
+                    value="20"
+                  >
+                    20
+                  </option>
+                  <option
+                    value="50"
+                  >
+                    50
+                  </option>
+                  <option
+                    value="100"
+                  >
+                    100
+                  </option>
+                </select>
+              </div>
+              <div
+                class="rgt-footer-pagination"
+              >
+                <button
+                  class="rgt-footer-pagination-button rgt-disabled-button"
+                  disabled=""
+                >
+                  Prev
+                </button>
+                <div
+                  class="rgt-footer-pagination-input-container"
+                >
+                  <span>
+                    Page:
+                     
+                  </span>
+                  <input
+                    class="rgt-footer-page-input"
+                    type="number"
+                    value="0"
+                  />
+                  <span>
+                    of
+                     
+                    0
+                  </span>
+                </div>
+                <button
+                  class="rgt-footer-pagination-button rgt-disabled-button"
+                  disabled=""
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          Export to CSV
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
